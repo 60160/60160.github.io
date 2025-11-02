@@ -17,19 +17,28 @@ h3, a, a:visited, button, select{
 	text-decoration: none;
 }
 
-* {
-		background-color:white;
+
+
+#logo{
+	width:15%;
 }
 
+.Title2 #logo{
+	width:10%;
+}
 
 .Title{
-	font-size: 72px;
+	padding-left:50px;
+}
+
+.Mast{
+	padding: 25px;
 }
 
 .Header{
 	text-align:right;
 	display: inline;
-	padding-left:100px;
+	padding-left:50px;
 }
 
 .ChapterTitle{
@@ -39,6 +48,7 @@ h3, a, a:visited, button, select{
 .Language {
 	display:block;
 	text-align:center;
+	padding-top:25px;
 }
 
 #lang{
@@ -49,15 +59,46 @@ h3, a, a:visited, button, select{
 	padding-left:75px;
 }
 
-.chapterindex {
-	text-align:center;
+div.chapterindex{
+	width: 100vw;
+	height: 60vh;
+	background: red;
+	text-align:left;
+}
+
+.chapterindex #chapter{
+	width:1000px;
+	height: 50px;
 	display:block;
-	padding-top: 50px;
+	margin: auto;
+	background: blue;
+	padding:100px;
+}
+
+.countdown{
+	display:inline;
+	font-size: 72px;
+	padding-right: 50px;
+}
+
+.chapterindex #chapter #indexcontainer{
+	text-align:center;
+	background-image: url("chapter_divider.png");
+	background-size: cover;
+	background-repeat:  no-repeat;
+	display: inline-flex;
+	justify-content:left;
+	width:80%;
 	}
 	
-#chapter {
-	display:block;
-	padding-bottom: 20px;
+#day{
+	flex:1;
+}
+#month{
+	flex:1;
+}
+#songtitle{
+	flex:5;
 }
 
 .Comicbody{

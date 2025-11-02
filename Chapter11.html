@@ -12,7 +12,7 @@
 
 <div class="Mast">
 
-<h1> <a class="Title" href="index.html"> I'll_of_You! </a> </h1>
+<h1> <a class="Title" href="index.html"> <img id="logo" src="ILLOFYOU_LOGO_v1.png" alt="I'll of You!" width="25%" height="auto"> </a> </h1>
 
 <h2 class="Header">
 
@@ -59,7 +59,7 @@
 
 </div>
 
-<h2> <a class="Title" href="index.html"> I'll_of_You! </a> </h2>
+<h2> <a class="Title" href="index.html"> <img id="logo" src="ILLOFYOU_LOGO_v1.png" alt="I'll of You!" width="10%" height="auto"> </a> </h2>
 
 <script>
 	let	imgURLbase="Chapter11/I'll_of_You!_11_25p_";
@@ -68,7 +68,8 @@
 </script>
 <script src="pageflipper.js"></script>
 <script>
-window.scrollTo(0,90);
+const viewfinder = document.getElementById("chapterpage");
+viewfinder.scrollIntoView({block: "start"});
 </script>
 </body>
 </html>
