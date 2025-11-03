@@ -2,12 +2,15 @@ body{
 }
 h1{
 	display:inline;
+	font-weight:normal;
 }
 h2{
 	display:inline;
+	font-weight:normal;
 }
 h3{
 	display:inline;
+	font-weight:normal;
 }
 
 h3, a, a:visited, button, select{
@@ -59,45 +62,122 @@ h3, a, a:visited, button, select{
 	padding-left:75px;
 }
 
-div.chapterindex{
+div.indexbody{
+	margin-top: 40px;
 	width: 100vw;
 	height: 60vh;
-	background: red;
-	text-align:left;
+}
+
+.indexbody{
+	position: relative;
+	height:fit-content;
+	display:flex;
+	justify-content:center;
+	margin: auto;
+}
+
+div.volumeindex{
+	width:10vw;
+	height:60vh;
+	flex:1;
+	text-align:center;
+}
+
+.volumelabel{
+	font-family: "Courier New", monospace;
+	margin:auto;
+	margin-right: -200px;
+}
+
+#coverimg{
+	vertical-align: middle;
+	width: 33%;
+}
+
+div.chapterindex{
+	flex:4;
+	width: 50vw;
+	height: 60vh;
+	text-align:center;
 }
 
 .chapterindex #chapter{
+	position: relative;
 	width:1000px;
-	height: 50px;
-	display:block;
+	height: fit-content;
+	display:flex;
+	justify-content:center;
 	margin: auto;
-	background: blue;
-	padding:100px;
+	margin-top:20px;
+	margin-right:33vw;
 }
 
 .countdown{
-	display:inline;
-	font-size: 72px;
-	padding-right: 50px;
+	width: 150px;
+	margin-right:70px;
+	font-family: "Lucida Bright";
+	font-size: 48px;
 }
 
-.chapterindex #chapter #indexcontainer{
+#shout{
+	font-size: 24px;
+}
+
+#hyphen{
+	position:absolute;
+	font-size:36px;
+	left: 200px;
+	top: 10px;
+}
+
+#indexcontainer{
+	position: relative;
+	vertical-align: bottom;
 	text-align:center;
 	background-image: url("chapter_divider.png");
 	background-size: cover;
 	background-repeat:  no-repeat;
 	display: inline-flex;
 	justify-content:left;
-	width:80%;
+	height:50px;
+	width:70%;
 	}
+
+#indexcontainer .index{
+	margin:auto;
+	display: inline-block;
+}
 	
-#day{
-	flex:1;
+#engmonth{
+	position: absolute;
+	font-weight: bold;
+	left: 25px;
 }
+	
+#day, #month{
+	flex:1;
+	font-size: 24px;
+}
+
 #month{
-	flex:1;
+	text-align:left;
+	padding-left:20px;
 }
+
+#slash{
+	position: absolute;
+	left: 90px;
+	top: 15px;
+	font-size: 20px;
+}
+
+#kanji_month, #kanji_day{
+	font-size: 14px;
+	margin-left:-15px;
+}
+
 #songtitle{
+	font-size: 18px;
 	flex:5;
 }
 
