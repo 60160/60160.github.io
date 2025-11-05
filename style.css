@@ -21,7 +21,51 @@ h3, a, a:visited, button, select{
 	text-decoration: none;
 }
 
+.foregroundelement{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100vh;
+	width:100vw;
+	z-index:-1;
+}
 
+#verse1{
+	position:absolute;
+	height: 40vh;
+	width: auto;
+	bottom: -80px;
+	left: 750px;
+	
+}
+
+#author{
+	position:relative;
+	right:-40px;
+}
+
+#group-photo{
+	position:absolute;
+	height: 40vh;
+	width: auto;
+	bottom: -40px;
+	left: 50px;
+}
+
+.backgroundelement{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100vh;
+	width:100vw;
+	z-index:-2;
+}
+#background-img{
+	position:relative;
+	height:100vh;
+	width:100vw;
+	opacity:100%;
+}
 
 #logo{
 	width:15%;
