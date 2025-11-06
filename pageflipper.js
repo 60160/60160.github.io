@@ -2,8 +2,8 @@
 	let nchapter=chapternumber-1;
 	let pchapter=chapternumber+1;
 	if(pchapter >12){pchapter=12;}
-	document.getElementById("pchap").href="Chapter"+pchapter+".html";
-	document.getElementById("nchap").href="Chapter"+nchapter+".html";
+	document.getElementById("pchap").href="Chapter"+pchapter+language+".html";
+	document.getElementById("nchap").href="Chapter"+nchapter+language+".html";
 	
 	pageselecter=document.getElementById("pageselect");
 	for (var i=1; i<=pagemax; i++){
@@ -27,7 +27,7 @@
 		pagecount++;
 		if(pagecount > pagemax){
 			chapternumber--;
-			window.location.replace("Chapter"+chapternumber+".html");
+			window.location.replace("Chapter"+chapternumber+language+".html");
 		}
 		pageselecter.selectedIndex++;
 		let pageindex = ("000"+pagecount).slice(-3);
@@ -40,7 +40,7 @@
 			if(chapternumber>12){
 				chapternumber--;
 			}
-			window.location.replace("Chapter"+chapternumber+".html");
+			window.location.replace("Chapter"+chapternumber+language+".html");
 		}
 		pageselecter.selectedIndex--;
 		let pageindex = ("000"+pagecount).slice(-3);

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> I'll of You! Ch12</title>		
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- title page shoots you to the chapter select homepage -->
+
+<div class="Mast">
+
+<h1> <a class="Title" href="index.html"> <img id="logo" src="ILLOFYOU_LOGO_v1.png" alt="I'll of You!" width="25%" height="auto"> </a> </h1>
+
+<h2 class="Header">
+
+<a id="About" href="https:\\www.youtube.com"> About </a>
+<a id="Blog" href="https:\\www.youtube.com"> Blog </a>
+<a id="Gallery" href="https:\\www.youtube.com"> Gallery </a>
+
+</h2>
+
+</div>
+
+<h3 id="ChapterTitle"> CHAPTER 12 - 14.11.15 Angel of Love - PuffyAmiyumi </h3>
+
+<div class="Language">
+
+<a id="lang" href="Chapter12_ENG.html"> ENGLISH </a>
+<a id="lang" href="Chapter12_PT.html"> PORTUGUESE </a>
+<a id="lang" href="Chapter12_JP.html"> 日本語　</a>
+
+</div>
+
+<div class="Comicbody">
+
+<img id="comicbody-bg" src="Clair_backdrop.png" alt="Clair_backdrop.png" width="auto">
+
+<div id="forward" onclick="flipforward()"> </div>
+<div id="back" onclick="flipbackward()"> </div>
+
+<img class="image" id="chapterpage" src="Chapter12/I'll_of_You!_12_25p_001.png" alt="Comic_page" width="" height="">
+<!-- justify from the center, so something like width/2 spacing -->
+
+</div>
+
+<div class="Navigation">
+
+<a id="fpage" href="Chapter12_ENG.html"> first chapter </a>
+<a id="pchap" href=""> previous chapter </a>
+<button id="ppage" onclick="flipbackward()"> previous page </button>
+
+<select id="pageselect" onchange="setpage()">1
+</select>
+
+<button id="npage" onclick="flipforward()"> next page </button>
+<a id="nchap" href=""> next chapter </a>
+<a id="lpage" href="Chapter10_ENG.html"> last chapter </a>
+
+</div>
+
+<h2> <a class="Title" href="index.html"> <img id="logo" src="ILLOFYOU_LOGO_v1.png" alt="I'll of You!" width="10%" height="auto"> </a> </h2>
+
+<script src="sizeadjust.js"></script>
+<script>
+	let	imgURLbase="Chapter11/ENG/I'll_of_You!_ENG_11_25p_";
+	let language="_ENG";
+	let chapternumber=12;
+	let pagemax= 40;
+</script>
+<script src="pageflipper.js"></script>
+<script>
+const viewfinder = document.getElementById("chapterpage");
+viewfinder.scrollIntoView({block: "start"});
+</script>
+</body>
+</html>
