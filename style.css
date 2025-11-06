@@ -6,6 +6,8 @@ h1{
 }
 h2{
 	display:inline;
+	font-size:18px;
+	opacity:30%;
 	font-weight:normal;
 }
 h3{
@@ -34,8 +36,8 @@ h3, a, a:visited, button, select{
 	position:absolute;
 	height: 40vh;
 	width: auto;
-	bottom: -80px;
-	left: 750px;
+	bottom: -100px;
+	left: 650px;
 	
 }
 
@@ -46,7 +48,7 @@ h3, a, a:visited, button, select{
 
 #group-photo{
 	position:absolute;
-	height: 40vh;
+	height: 35vh;
 	width: auto;
 	bottom: -40px;
 	left: 50px;
@@ -62,9 +64,10 @@ h3, a, a:visited, button, select{
 }
 #background-img{
 	position:relative;
-	height:100vh;
+	height:auto;
 	width:100vw;
 	opacity:100%;
+	/*display:none;*/
 }
 
 #logo{
@@ -76,7 +79,7 @@ h3, a, a:visited, button, select{
 }
 
 .Title{
-	padding-left:50px;
+	padding-left:100px;
 }
 
 .Mast{
@@ -259,6 +262,13 @@ div.chapterindex{
 
 .Comicbody{
 	position:relative;
+}
+
+#comicbody-bg{
+	position:absolute;
+	width: 100vw;
+	opacity:20%;
+	z-index: -1;
 }
 
 #back{
