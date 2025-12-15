@@ -106,7 +106,7 @@ h3, a, a:visited, button, select{
 	padding-left:20px;
 }
 
-#About, #Gallery, #Blog {
+#About, #Gallery, #Blog, #Sites{
 	padding-left:75px;
 }
 
@@ -363,5 +363,14 @@ div.Navigation{
 .Gallery_body img{
 	float: left;
     width:500px;
- 
+}
+
+/* Sites-----------------------------------*/
+
+.Sites_body{
+	padding-top:50px;
+	font-family: "Lucida Bright";
+	width: 80vw;
+	margin:auto;
+	line-height:1.5;
 }
