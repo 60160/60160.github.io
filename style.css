@@ -316,3 +316,52 @@ div.Navigation{
 .Navigation select{
 	flex:0.25
 }
+
+/* BLOG-----------------------------------*/
+
+.blog_body{
+	font-family: "Lucida Bright";
+	width: 60vw;
+	margin:auto;
+	padding-top:40px;
+	}
+
+/* ABOUT-----------------------------------*/
+
+.About_body{
+	padding-top:50px;
+	font-family: "Lucida Bright";
+	width: 40vw;
+	margin:auto;
+	line-height:1.5;
+	}
+.paragraph{
+	text-indent: 1em;
+	padding:20px;
+}
+.About_body a{
+	font-family: "Lucida Bright";
+	color:black;
+	border:none;
+	text-decoration: underline;
+}
+.About_body #Clair_gif {
+	position:absolute;
+	z-index: -1;
+	opacity: 5%;
+	top: 120px;
+	left: 20vw;
+	width:60vw;
+}
+
+/* Gallery-----------------------------------*/
+.Gallery_body{
+	display:grid;
+	 grid-template-columns: auto auto auto;
+	width:100vw;
+}
+.Gallery_body img{
+	float: left;
+    width:500px;
+ 
+}
