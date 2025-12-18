@@ -24,6 +24,7 @@ h3, a, a:visited, button, select{
 }
 
 .foregroundelement{
+	background-image: url('index-asset\Group-photo.png');
 	position:absolute;
 	top:0;
 	left:0;
@@ -55,6 +56,11 @@ h3, a, a:visited, button, select{
 }
 
 .backgroundelement{
+	background-image: url('index-asset/Index-background.png');
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	position:absolute;
 	top:0;
 	left:0;
@@ -106,7 +112,7 @@ h3, a, a:visited, button, select{
 	padding-left:20px;
 }
 
-#About, #Gallery, #Blog, #Sites{
+#About, #Gallery, #Blog, #Sites, #Bside{
 	padding-left:75px;
 }
 
@@ -373,4 +379,16 @@ div.Navigation{
 	width: 80vw;
 	margin:auto;
 	line-height:1.5;
+}
+
+/* B!Side----------------------------------*/
+
+.bside_title{
+	text-align:center;
+	padding-top:10px;
+}
+
+.bside_body {
+	text-align:center;
+	padding-top:10px;
 }
