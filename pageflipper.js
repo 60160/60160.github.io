@@ -1,10 +1,10 @@
+	let lchapter=09;
 	let pagecount = 1;
 	let nchapter=chapternumber-1;
 	let pchapter=chapternumber+1;
 	if(pchapter >12){pchapter=12;}
 	document.getElementById("pchap").href="Chapter"+pchapter+language+".html";
 	document.getElementById("nchap").href="Chapter"+nchapter+language+".html";
-	
 	pageselecter=document.getElementById("pageselect");
 	for (var i=1; i<=pagemax; i++){
 		var opt = document.createElement('option');
@@ -28,6 +28,9 @@
 		if(pagecount > pagemax){
 			chapternumber--;
 			window.location.replace("Chapter"+chapternumber+language+".html");
+			if(nchapter<lchapter){
+				window.location.replace("index.html");
+			}
 		}
 		pageselecter.selectedIndex++;
 		let pageindex = ("000"+pagecount).slice(-3);
@@ -50,3 +53,7 @@
 	pagecount=pageselecter.value;
 	document.getElementById("chapterpage").src=imgURLbase+("000"+pageselecter.value).slice(-3)+".png";
 	}
+	function gotolastchapter(){
+		window.location.replace("Chapter"+lchapter+language+".html");
+	}
+	
