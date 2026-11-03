@@ -5,6 +5,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
+<style>
+		.cover{
+			height:100%;
+			width:100%;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			position: fixed;
+			z-index: 1;
+		}
+		.coverimg{
+			height: 100%;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			z-index: 2;
+			object-fit:contain;
+		}
+		.hide{
+			height:100%;
+			width:100%;
+			position: absolute;
+			top:0%;
+			z-index: 1;
+		}
+		.bg{
+			height:100%;
+			width:auto;
+			background-color:black;
+			opacity:90%;
+		}
+</style>
 </head>
 <body>
 
@@ -23,21 +56,126 @@
 </h2>
 </div>
 
-<p> worry about the formatting later. </p>
+<div class="cover"  style="display:none;">
+
+<img class="coverimg" src="Gallery/Promo1.png" alt="Promo1.gif" onclick="enLarge()">
+<div class="bg"></div>
+<div class="hide" onclick="hidecoverview()"></div>
+</div>
 
 <div class="Gallery_body">
 
+<img src="Gallery/110226.png">
+<img src="Gallery/9.8.26 sketch.png">
+<img src="Gallery/8.9.26 sketch.png">
+<img src="Gallery/6.17.26 sketch.png">
+<img src="Gallery/sketchhhh.png">
+<img src="Gallery/10125_sketch_1.png">
+<img src="Gallery/10125_sketch_2.png">
+<img src="Gallery/Chris_012526_2.png">
+<img src="Gallery/ch10_clouds.gif">
+<img src="Gallery/idfk.png">
+<video src="Gallery/Clair_Test_1.mp4" controls autoplay muted loop type="video/mp4"></video>
+<img src="Gallery/Karamazov brothers_notext.png">
+<img src="Gallery/kutygktuyg.png">
+<img src="Gallery/Lucifani.png">
+<img src="Gallery/May_Illustration.png">
+<img src="Gallery/Painting 9.15.26.png">
+<img src="Gallery/sketch.png">
+<img src="Gallery/sketch11325.png">
 <img src="Gallery/Promo1.gif">
+<img src="Gallery/Draft 1.png">
 <img src="Gallery/saru.png">
 <img src="Gallery/haru1.png">
 <img src="Gallery/haru2.png">
-<img src="Gallery/Draft 1.png">
+<img src="Gallery/Dragon Quest 8 11 19.png">
+<img src="Gallery/I Stand Alone.png">
+<img src="Gallery/Hatsune MIku 2 27 22.png">
 <img src="Gallery/sketch 9 19 22.png">
 <img src="Gallery/smilesmile2.png">
-
 </div>
 
 <div class="backgroundelement" style="opacity:30%;">
 </div>
+<script>
+var imgelements = document.querySelectorAll(".Gallery_body img");
+var imgsrc = "showcoverview(src)";
+for (var i=0; i<imgelements.length; i++){
+	imgelements[i].addEventListener('click', function(){showcoverview(this)});
+}
+function showcoverview(filename){
+document.querySelector(".cover").style.display= "block";
+document.querySelector(".coverimg").src= filename.src;
+document.querySelector(".coverimg").alt= filename.src;
+}
+function hidecoverview(){
+if(zoom<0){
+enLarge();
+}
+document.querySelector(".cover").style.display= "none";
+}
+var zoom = 1;
+var draggable = false;
+function enLarge(){
+const elemheight = document.querySelector(".coverimg").offsetHeight;
+var height = elemheight;
+if(zoom < 0){
+height /=2;
+document.querySelector(".coverimg").style.height = height+"px";
+document.querySelector(".coverimg").style.top = "50vh";
+document.querySelector(".coverimg").style.left = "50vw";
+}
+else{
+height *=2;
+document.querySelector(".coverimg").style.height = height+"px";
+}
+zoom= zoom*-1;
+draggable = !draggable;
+}
+
+let draggableElem = document.querySelector(".coverimg");
+let initialX = 0;
+	initialY = 0;
+let moveElement = false;
+
+let events = {
+	down: "mousedown",
+	move: "mousemove",
+	up: "mouseup",
+}
+
+draggableElem.addEventListener(events.down,(e) => {
+	e.preventDefault();
+	initialX = e.clientX;
+	initialY = e.clientY;
+	
+	moveElement = true;
+	document.querySelector('.coverimg').onclick = () => enLarge();
+})
+
+draggableElem.addEventListener(events.move, (e) => {
+	if(moveElement && draggable) {
+		e.preventDefault();
+		let newX = e.clientX;
+		let newY = e.clientY;
+		draggableElem.style.top = draggableElem.offsetTop - (initialY - newY) + "px";
+		draggableElem.style.left = draggableElem.offsetLeft - (initialX - newX) + "px";
+		initialX = newX;
+		initialY = newY;
+		document.querySelector('.coverimg').onclick = null;
+	}
+});
+
+draggableElem.addEventListener(events.up, (stopMovement = (e) => {
+	moveElement = false;
+	})
+);
+
+draggableElem.addEventListener("mouseleave", stopMovement);
+draggableElem.addEventListener(events.up, (e) => {
+	moveElement = false;
+	});
+
+</script>
 </body>
 </html>
