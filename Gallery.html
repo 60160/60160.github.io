@@ -105,9 +105,11 @@ for (var i=0; i<imgelements.length; i++){
 	imgelements[i].addEventListener('click', function(){showcoverview(this)});
 }
 function showcoverview(filename){
+let srcstring = filename.src;
+var imgsrcnew = srcstring.replace(".png","_full.png");
 document.querySelector(".cover").style.display= "block";
-document.querySelector(".coverimg").src= filename.src;
-document.querySelector(".coverimg").alt= filename.src;
+document.querySelector(".coverimg").src= imgsrcnew;
+document.querySelector(".coverimg").alt= imgsrcnew;
 }
 function hidecoverview(){
 if(zoom<0){
