@@ -365,13 +365,14 @@ div.Navigation{
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width:100%;
 }
-.Gallery_body img,video{
-	display: inline-block;
+.Gallery_body .image{
     height:500px;
 }
-
+.Gallery_body .anim{
+	width:500px;
+	align-self:center;
+	}
 /* Sites-----------------------------------*/
 
 .Sites_body{
