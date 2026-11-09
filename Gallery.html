@@ -44,6 +44,17 @@
 		.Gallery_body .anim{
 			display: none;
 		}
+		.taglist{
+			display:flex;
+			justify-content:center;
+		}
+		.taglist a{
+			padding-right:1vw;
+		}
+		.Gallery_animation, .Gallery_drawing{
+			padding-right:10vw;
+			display:inline-block;
+		}
 </style>
 </head>
 <body>
@@ -70,65 +81,191 @@
 <div class="hide" onclick="hidecoverview()"></div>
 </div>
 
-<a onclick="show('.image')"> Drawings </a>
-<a onclick="show('.anim')"> Animations </a>
+<div class="taglist">
+<div class="Gallery_drawing">
+<a onclick="show('.image')"><h4>Drawings</h4></a>
+<a onclick="show('.ioud')"> illofyou </a>
+<a onclick="show('.misa')"> misamaru </a>
+<a onclick="show('.illust')"> illustration </a>
+<a onclick="show('.sketch')"> sketch </a>
+<a onclick="show('.figur')"> life_drawing </a>
+</div>
+<div class="Gallery_animation">
+<a onclick="show('.anim')"><h4>Animations</h4></a>
+<a onclick="show('.iou')"> illofyou </a>
+<a onclick="show('.comm')"> composited </a>
+<a onclick="show('.geng')"> genga </a>
+<a onclick="show('.rkgk')"> LO/rkgk </a>
+<a onclick="show('.konte')"> storyboard </a>
+</div>
+</div>
 
 <div class="Gallery_body">
 
-<img 	class="image" 	src="Gallery/schizo.png">
-<img 	class="image" 	src="Gallery/110226.png">
-<img 	class="image" 	src="Gallery/9.8.26 sketch.png">
-<img 	class="image" 	src="Gallery/misamaru.png">
-<img 	class="image" 	src="Gallery/misamaru2.png">
-<img 	class="image" 	src="Gallery/heh.png">
-<img 	class="image" 	src="Gallery/hehe.png">
-<img 	class="image" 	src="Gallery/8.9.26 sketch.png">
-<img 	class="image" 	src="Gallery/6.17.26 sketch.png">
-<img 	class="image" 	src="Gallery/sketchhhh.png">
-<img 	class="image"	src="Gallery/03062026.png">
-<img 	class="image"	src="Gallery/doodle 2 25 26.png">
-<img 	class="image"	src="Gallery/10125_sketch_1.png">
-<img 	class="image"	src="Gallery/10125_sketch_2.png">
-<img 	class="image" 	src="Gallery/Chris_012526_2.png">
-<img 	class="image" 	src="Gallery/idfk.png">
-<video 	class="anim" 	src="Gallery/Clair_Test_1.mp4" controls autoplay muted loop type="video/mp4"></video>
-<img 	class="image"	src="Gallery/Karamazov brothers_notext.png">
-<img 	class="image"	src="Gallery/kutygktuyg.png">
-<img 	class="image"	src="Gallery/Lucifani.png">
-<img 	class="image"	src="Gallery/May_Illustration.png">
-<img 	class="image"	src="Gallery/Painting 9.15.26.png">
-<img 	class="image"	src="Gallery/sketch.png">
-<img 	class="image"	src="Gallery/sketch11325.png">
-<img 	class="image"	src="Gallery/Draft 1.png">
-<img 	class="image"	src="Gallery/saru.png">
-<img 	class="image"	src="Gallery/haru1.png">
-<img 	class="image"	src="Gallery/haru2.png">
-<img 	class="image"	src="Gallery/Dragon Quest 8 11 19.png">
-<img 	class="image"	src="Gallery/I Stand Alone.png">
-<img 	class="image"	src="Gallery/Hatsune MIku 2 27 22.png">
-<img 	class="image"	src="Gallery/sketch 9 19 22.png">
-<img 	class="image"	src="Gallery/smilesmile2.png">
-<img 	class="anim" 	src="Gallery/ch10_clouds.gif">
-<img 	class="anim"	src="Gallery/Promo1.gif">
-<video 	class="anim" 	src="Gallery/satsuei_test_resize.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/YUMA_take1.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/SweetCanvas_ALLMIX_nosound_v1.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/FSF_32_GEN_2.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/Untitled_T1.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/Sheya_c_28_t4.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/konte_genga.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/s6c2-gen_preview.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/Oretaka-san.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/tdm1.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/tdm2.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/tdm3.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/5 22 19 TEST v01.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/8 31 20 TEST VERSION 2.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/C1.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/OnePiece.mp4" controls autoplay muted loop type="video/mp4"></video>
-<video 	class="anim" 	src="Gallery/c_137.mp4" controls autoplay muted loop type="video/mp4"></video>
-<img 	class="anim" 	src="Gallery/c35_gen.gif">
-<img 	class="anim" 	src="Gallery/doode_2.18.26.gif">
+<img 	class="image 	sketch	paper"		
+src="Gallery/schizo.png">
+
+<img 	class="image 	illust	ioud"		
+src="Gallery/110226.png">
+
+<img 	class="image 	illust	ioud	misa"		
+src="Gallery/9.8.26 sketch.png">
+
+<img 	class="image 	illust	ioud	misa"		
+src="Gallery/misamaru.png">
+
+<img 	class="image 	illust	ioud	misa"		
+src="Gallery/misamaru2.png">
+
+<img 	class="image 	sketch	figur"			
+src="Gallery/heh.png">
+
+<img 	class="image 	sketch	figur"		
+src="Gallery/hehe.png">
+
+<img 	class="image 	sketch	ioud"		
+src="Gallery/8.9.26 sketch.png">
+
+<img 	class="image 	sketch	ioud"		
+src="Gallery/6.17.26 sketch.png">
+
+<img 	class="image 	illust	ioud"		
+src="Gallery/sketchhhh.png">
+
+<img 	class="image 	sketch"
+src="Gallery/03062026.png">
+
+<img 	class="image 	sketch"		
+src="Gallery/doodle 2 25 26.png">
+
+<img 	class="image 	sketch	ioud"		
+src="Gallery/10125_sketch_1.png">
+
+<img 	class="image 	sketch"		
+src="Gallery/10125_sketch_2.png">
+
+<img 	class="image 	illust	ioud"		
+src="Gallery/Chris_012526_2.png">
+
+<img 	class="image 	illust	ioud"		
+src="Gallery/idfk.png">
+
+<img 	class="image 	sketch"		
+src="Gallery/Karamazov brothers_notext.png">
+
+<img 	class="image 	sketch	cd"		
+src="Gallery/kutygktuyg.png">
+
+<img 	class="image 	sketch	cd"		
+src="Gallery/Lucifani.png">
+
+<img 	class="image 	illust	ioud"		
+src="Gallery/May_Illustration.png">
+
+<img 	class="image 	illust	ioud"		
+src="Gallery/Painting 9.15.26.png">
+
+<img 	class="image 	sketch"		
+src="Gallery/sketch.png">
+
+<img 	class="image 	illust	ioud"		
+src="Gallery/sketch11325.png">
+
+<img 	class="image 	illust"		
+src="Gallery/Draft 1.png">
+
+<img 	class="image 	illust"		
+src="Gallery/saru.png">
+
+<img 	class="image 	illust"
+src="Gallery/haru1.png">
+
+<img 	class="image 	illust"		
+src="Gallery/haru2.png">
+
+<img 	class="image 	illust"		
+src="Gallery/Dragon Quest 8 11 19.png">
+
+<img 	class="image 	illust"		
+src="Gallery/I Stand Alone.png">
+
+<img 	class="image 	illust"		
+src="Gallery/Hatsune MIku 2 27 22.png">
+
+<img 	class="image 	illust"		
+src="Gallery/sketch 9 19 22.png">
+
+<img 	class="image 	illust"		
+src="Gallery/smilesmile2.png">
+
+
+
+<video 	class="anim 	iou"		
+src="Gallery/Clair_Test_1.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<img 	class="anim 	iou"		
+src="Gallery/ch10_clouds.gif">
+
+<img 	class="anim 	iou"		
+src="Gallery/Promo1.gif">
+
+<video 	class="anim 	comm"		
+src="Gallery/satsuei_test_resize.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	comm"		
+src="Gallery/YUMA_take1.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	comm"		
+src="Gallery/SweetCanvas_ALLMIX_nosound_v1.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	geng"		
+src="Gallery/FSF_32_GEN_2.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	geng"		
+src="Gallery/Untitled_T1.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	geng"		
+src="Gallery/Sheya_c_28_t4.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	konte"		
+src="Gallery/konte_genga.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	geng"		
+src="Gallery/s6c2-gen_preview.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	comm"		
+src="Gallery/Oretaka-san.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	comm"		
+src="Gallery/tdm1.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	comm"		
+src="Gallery/tdm2.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	comm"		
+src="Gallery/tdm3.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	comm"		
+src="Gallery/5 22 19 TEST v01.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	comm"		
+src="Gallery/8 31 20 TEST VERSION 2.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	geng"		
+src="Gallery/C1.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	geng"		
+src="Gallery/OnePiece.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<video 	class="anim 	geng"		
+src="Gallery/c_137.mp4" controls autoplay muted loop type="video/mp4"></video>
+
+<img 	class="anim 	geng"		
+src="Gallery/c35_gen.gif">
+
+<img 	class="anim 	rkgk"		
+src="Gallery/doode_2.18.26.gif">
+
 </div>
 
 <div class="backgroundelement" style="opacity:30%;">
